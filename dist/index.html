@@ -6,35 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Journey</title>
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./img/" type="image/x-icon">
     <link rel="stylesheet" href="./lib/swiper.min.css">
     <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="./img/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
-    <section class="homepage">
+    <section class="homepage home">
+        <div class="nav-phone">
+            <div class="burger-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
         <nav class="navbar">
-            <h1 class="navbar-brand">
-                <span class="logo"></span>
-                journey
-            </h1>
-            <div class="buttons">
-                <ul>
-                    <li class="nav-itens">
-                        <a href="#">home</a>
-                    </li>
-                    <li class="nav-itens">
-                        <a href="#">about us</a>
-                    </li>
-                    <li class="nav-itens">
-                        <a href="#">our work</a>
-                    </li>
-                    <li class="nav-itens">
-                        <a href="#">latest news</a>
-                    </li>
-                </ul>
-                <span class="say-hello"> say hello</span>
+            <div class="menu">
+                <h1 class="navbar-brand">
+                    <span class="logo"></span>
+                    journey
+                </h1>
+                <div class="buttons">
+                    <ul>
+                        <li class="nav-itens" data-nav="home">
+                            <a href="#">home</a>
+                        </li>
+                        <li class="nav-itens" data-nav="about">
+                            <a href="#">about us</a>
+                        </li>
+                        <li class="nav-itens" data-nav="our_work">
+                            <a href="#">our work</a>
+                        </li>
+                        <li class="nav-itens" data-nav="latest_news">
+                            <a href="#">latest news</a>
+                        </li>
+                    </ul>
+                    <span class="say-hello"> say hello</span>
+                </div>
             </div>
         </nav>
         <div class="home-presents">
@@ -50,7 +67,7 @@
             <div class="arrow-line-two"></div>
         </div>
     </section>
-    <section class="make-happen">
+    <section class="make-happen about">
         <div class="container">
             <div class="happen-texts">
                 <h1 class="make-happen-title">make s**t happen</h1>
@@ -64,7 +81,7 @@
                     <br> Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque
                     egestas sem. Suspendisse commodo ullamcorper magna.</p>
             </div>
-            <div class="grid">
+            <div class="grid our_work">
                 <div class="bg-swiper">
                     <div class="slide-images swiper-container">
                         <div class="swiper-wrapper">
@@ -89,7 +106,7 @@
                             <div class="swiper-slide">
                                 <img src="./img/slide2.png">
                             </div>
-                            <div class="swiper-slide careca">
+                            <div class="swiper-slide">
                                 <img src="./img/slide3.png">
                             </div>
                             <div class="swiper-slide">
@@ -118,6 +135,61 @@
             </div>
         </div>
     </section>
+    <!-- <section class="blog-section latest_news">
+        <div class="blog-grid">
+            <ul class="news-list">
+                <li>
+                    <img src="./img/card1.png" alt="card1">
+                    <span>29th October 2017</span>
+                    <h2>We went on a lovely little trip down the river this Summer</h2>
+                    <p>
+                        Always be creating something amazing in everything you do and don’t forget that there is always a way to achieve certain…
+                    </p>
+                </li>
+                <li>
+                    <img src="./img/card2.png" alt="card2">
+                    <span>21st October 2017</span>
+                    <h2>How our recent team get-together went south quite quickly</h2>
+                    <p>
+                        Always be creating something amazing in everything you do and don’t forget that there is always a way to achieve certain…
+                    </p>
+                </li>
+                <li>
+                    <img src="./img/card3.png" alt="card3">
+                    <span>18th September 2017</span>
+                    <h2>365 Ways you can be a better designer in 1331 easy steps</h2>
+                    <p>
+                        Always be creating something amazing in everything you do and don’t forget that there is always a way to achieve certain…
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="clients">
+        <div class="clients-grid">
+            <ul class="client-logo-list">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-grid">
+            <ul class="footer-itens">
+                <li>
+                    <h1 class="navbar-brand">
+                        <span class="logo"></span>
+                        journey
+                    </h1>
+                </li>
+                <li>
+                    <p>Journey © 2017. All Rights Reserved.</p>
+                </li>
+            </ul>
+        </div>
+    </footer> -->
     <script src="./lib/jquery.min.js"></script>
     <script src="./lib/swiper.min.js"></script>
     <script src="./js/main.min.js"></script>

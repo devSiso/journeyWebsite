@@ -19,5 +19,5 @@ $(document).ready(function () {
         });
         return index;
     }
-    swiper.slideTo(cu('careca', 0, !1));
+    swiper.slideTo(cu('careca'), 0, !1);
 });
