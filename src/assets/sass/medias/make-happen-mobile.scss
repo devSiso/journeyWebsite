@@ -1,0 +1,48 @@
+@media only screen and (max-width: 675px) and (min-width: 320px) {
+    .make-happen {
+        width: 100vw;
+        height: 1200px;
+        .container {
+            width: 95%;
+            .happen-texts {
+                width: 100%;
+                height: 750px;
+                margin-bottom: 100px;
+                position: relative;
+                h1 {
+                    font-size: 56px;
+                    line-height: 62px;
+                    text-align: center;
+                }
+                p {
+                    text-align: center;
+                    font-size: 17px;
+                    line-height: 30px;
+                    width: 100%;
+                }
+            }
+            .grid {
+                max-width: 100%;
+                min-width: 100%;
+                height: 460px;
+                .bg-swiper {
+                    width: 325px;
+                    height: 380px;
+                    .slide-images{
+                        margin-left: -472.5px;
+                        .swiper-wrapper{
+                            div{
+                                &:hover{
+                                    transform: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .swiper-slide-active {
+        transform: none;
+    }
+}

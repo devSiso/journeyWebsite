@@ -1,0 +1,25 @@
+@media only screen and (max-width: 675px) and (min-width: 320px) {
+    .twitter-sect {
+        width: 100vw;
+        height: 400px;
+        margin-top: 100px;
+        .section-grid {
+            width: 95%;
+            justify-content: center;
+            .section-content{
+                width: 350px;
+                height: 235px;
+                align-items: center;
+                p{
+                    text-align: center;
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+                .button-follow {
+                    width: 160px;
+                    height: 45px;
+                }
+            }
+        }
+    }
+}
