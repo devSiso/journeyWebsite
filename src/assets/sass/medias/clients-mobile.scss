@@ -1,0 +1,25 @@
+@media only screen and (max-width: 675px) and (min-width: 320px) {
+    .clients {
+        width: 100vw;
+        height: 800px;
+        .clients-grid {
+            min-width: 95%;
+            max-width: 95%;
+            .client-logo-list {
+                width: 100%;
+                height: 100%;
+                flex-flow: column wrap;
+                justify-content: space-around;
+
+                li{
+                    &:nth-child(1) {
+                        margin-top: 37px;
+                    }
+                    &:nth-child(4) {
+                        margin-bottom: 37px;
+                    }
+                }
+            }
+        }
+    }
+}

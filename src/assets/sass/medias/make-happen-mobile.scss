@@ -3,7 +3,8 @@
         width: 100vw;
         height: 1200px;
         .container {
-            width: 95%;
+            min-width: 95%;
+            max-width: 95%;
             .happen-texts {
                 width: 100%;
                 height: 750px;

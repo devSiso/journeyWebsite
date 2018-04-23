@@ -1,0 +1,43 @@
+@media only screen and (min-width:680px) and (max-width: 1124px) {
+    footer {
+        width: 100vw;
+        height: 250px;
+        .footer-grid {
+            min-width: 500px;
+            max-width: 500px;
+            justify-content: center;
+            .footer-itens {
+                height: 70%;
+                margin: auto;
+                li {
+                    .navbar-brand {
+                        display: flex;
+                        flex-flow: column wrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 100%;
+                        width: 100%;
+                        .logo {
+                            margin-right: 15px;
+                        }
+                    }
+                    &:nth-child(1) {
+                        height: 70px;
+                        margin-bottom: 25px;
+                        margin-top: 20px;
+                    }
+                    &:nth-child(2) {
+                        height: 40px;
+                        display: flex;
+                        flex-flow: column wrap;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+                p {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}

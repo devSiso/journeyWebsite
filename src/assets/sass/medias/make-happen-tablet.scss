@@ -1,0 +1,27 @@
+@media only screen and (min-width:680px) and (max-width: 1124px) {
+    .make-happen {
+        width: 100vw;
+        height: 1200px;
+        .container {
+            min-width: 85%;
+            max-width: 85%;
+            .make-happen {
+                width: 100%;
+            }
+            .happen-texts {
+                width: 100%;
+                text-align: center;
+                height: 840px;
+                p{
+                    text-align: center;
+                    margin: 0 auto;
+                }
+            }
+            .grid {
+                min-width: 100%;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+}

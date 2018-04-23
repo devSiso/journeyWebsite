@@ -12,6 +12,8 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    display: flex;
+    flex-flow: row wrap;
     .navbar {
         width: 100%;
         padding-top: 30px;
@@ -23,7 +25,6 @@
         align-items: center;
         position: fixed;
         transition: .25s;
-        border-radius: 4px;
         z-index: 100;
         .menu {
             width: 100%;
@@ -39,7 +40,7 @@
         .navbar-brand {
             height: 30px;
             width: 210px;
-            margin-left: 20px;
+            margin-left: 40px;
             justify-self: flex-start;
             font-family: 'Poppins', sans-serif;
             font-weight: 400;
@@ -61,10 +62,10 @@
             }
         }
         .buttons {
-            width: 600px;
+            width: 585px;
             height: 100%;
-            margin-right: 15px;
             position: relative;
+            margin-right: 40px;
             ul {
                 display: flex;
                 flex-flow: row nowrap;
@@ -91,57 +92,64 @@
             }
         }
     }
-    .color{
+    .color {
         background-color: $terciary;
         box-shadow: 1px 4px 20px $terciary;
     }
-    .home-presents {
-        width: 65%;
-        height: 450px;
+    .home-grid {
+        width: 1245px;
+        height: 620px;
+        padding-top: 200px;
+        position: relative;
+        margin: 0 auto;
+        align-self: center;
         display: flex;
         flex-flow: column wrap;
         justify-content: space-between;
         align-items: flex-start;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        .home-text {
-            color: #FFFFFF;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 400;
-            text-transform: uppercase;
-            letter-spacing: 20px;
-            line-height: 120px;
-            font-size: 102px;
-            width: 76%;
-        }
-        .view-projects-btn {
-            width: 200px;
-            height: 45px;
-            background-color: $primary;
+        .home-presents {
+            width: 1245px;
+            height: 450px;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            a {
-                text-decoration: none;
+            flex-flow: column wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            .home-text {
                 color: #FFFFFF;
                 font-family: 'Poppins', sans-serif;
                 font-weight: 400;
-                font-size: 16px;
                 text-transform: uppercase;
-                transition: .2s;
-                &:hover {
-                    color: lavender;
+                letter-spacing: 20px;
+                line-height: 120px;
+                font-size: 102px;
+                width: 76%;
+            }
+            .view-projects-btn {
+                width: 200px;
+                height: 45px;
+                background-color: $primary;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a {
+                    text-decoration: none;
+                    color: #FFFFFF;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    transition: .2s;
+                    &:hover {
+                        color: lavender;
+                    }
                 }
             }
         }
     }
     .arrow {
         position: absolute;
-        bottom: 75px;
-        left: 17%;
-        width: 47px;
+        bottom: 25px;
+        width: 45px;
         height: 30px;
         display: flex;
         flex-flow: row nowrap;
@@ -167,7 +175,7 @@
     width: 120px;
     height: 30px;
     position: absolute;
-    right: 25px;
+    right: 0px;
     top: 50%;
     transform: translateY(-50%);
     border: 2px solid #FFFFFF;
@@ -189,18 +197,23 @@
 
 @keyframes arrowanimation {
     0% {
-        bottom: 75px;
+        bottom: 25px;
     }
     25% {
-        bottom: 50px;
+        bottom: 15px;
     }
     50% {
-        bottom: 35px;
+        bottom: 0px;
     }
     75% {
-        bottom: 50px;
+        bottom: 15px;
     }
     100% {
-        bottom: 75px;
+        bottom: 25px;
     }
+}
+.fixed {
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }

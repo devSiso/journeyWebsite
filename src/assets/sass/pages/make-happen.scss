@@ -1,14 +1,15 @@
 .make-happen {
     width: 100%;
-    height: 952px;
+    height: 1054px;
     .container {
-        width: 65%;
+        min-width: 1000px; max-width: 1245px;
         height: 100%;
         margin: 0 auto;
         position: relative;
         .happen-texts {
             width: 945px;
             height: 704px;
+            margin-bottom: 70px;
             h1 {
                 font-family: 'Poppins', sans-serif;
                 font-weight: bold;
@@ -17,11 +18,11 @@
                 letter-spacing: 20px;
                 line-height: 107px;
                 text-transform: uppercase;
-                margin-top: 60px;
-                margin-bottom: 45px;
+                margin-top: 123px;
+                margin-bottom: 70px;
             }
             p {
-                text-align: justify;
+                text-align: left;
                 font-family: 'Droid-serif';
                 font-size: 20px;
                 color: $terciary;
@@ -33,7 +34,6 @@
             width: 750px;
             height: 400px;
             background-color: $primary;
-            border-radius: 8px;
             margin: 0 auto;
             position: relative;
             display: flex;
@@ -96,7 +96,7 @@
 
 .grid {
     min-width: 1000px;
-    max-width: 1000px;
+    max-width: 1245px;
     overflow: hidden;
     display: flex;
     justify-content: center;
